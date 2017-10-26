@@ -6,7 +6,10 @@ USE NotesDB;
 
 DROP TABLE User;
 
-CREATE TABLE User( 
+DROP TABLE Notes;
+
+CREATE TABLE User
+( 
     username VARCHAR(10) NOT NULL,
     password VARCHAR(10) NOT NULL,
     email VARCHAR(30) NOT NULL,
@@ -17,3 +20,11 @@ CREATE TABLE User(
 );
 
 INSERT INTO User values('admin', 'password', 'test@test.com', 1, 'Bob', 'Bobberson');
+
+CREATE TABLE Notes
+(
+    NoteID NUMBER NOT NULL;
+    DateCreated DATE NOT NULL;
+    Contents VARCHAR(10000) NOT NULL
+    PRIMARY KEY(NoteID)
+);
