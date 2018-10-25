@@ -34,10 +34,6 @@ public class NoteDB
         return Update;
     }
     
-    public List <Note> getAll() throws NotesDBException
-    {
-        
-    }
     
     public int getNote() throws NotesDBException
     {
